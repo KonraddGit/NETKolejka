@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "/miYWzUPd/4O0jkIFRr5CwERsMtftDdBiVWUoz7urRO+ABy2j7osrUQ46uG6aKqLSmXUKwKMDEYSfo/fA/zrtA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Konrad\\Desktop\\Work\\Repozytorium Lokalne\\NETKolejka\\QueueIntegration\\Receive\\Receive.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Konrad\\.nuget\\packages\\rabbitmq.client\\6.2.0-rc.1\\rabbitmq.client.6.2.0-rc.1.nupkg.sha512",
+    "C:\\Users\\Konrad\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Konrad\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

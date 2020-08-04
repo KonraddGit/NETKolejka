@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Konrad\\Desktop\\Work\\Repozytorium Lokalne\\NETKolejka\\QueueIntegration\\QueueIntegration\\QueueIntegration.csproj": {}
+    "C:\\Users\\Konrad\\Desktop\\Work\\Repozytorium Lokalne\\NETKolejka\\QueueIntegration\\Receive\\Receive.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Konrad\\Desktop\\Work\\Repozytorium Lokalne\\NETKolejka\\QueueIntegration\\QueueIntegration\\QueueIntegration.csproj": {
+    "C:\\Users\\Konrad\\Desktop\\Work\\Repozytorium Lokalne\\NETKolejka\\QueueIntegration\\Receive\\Receive.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Konrad\\Desktop\\Work\\Repozytorium Lokalne\\NETKolejka\\QueueIntegration\\QueueIntegration\\QueueIntegration.csproj",
-        "projectName": "QueueIntegration",
-        "projectPath": "C:\\Users\\Konrad\\Desktop\\Work\\Repozytorium Lokalne\\NETKolejka\\QueueIntegration\\QueueIntegration\\QueueIntegration.csproj",
+        "projectUniqueName": "C:\\Users\\Konrad\\Desktop\\Work\\Repozytorium Lokalne\\NETKolejka\\QueueIntegration\\Receive\\Receive.csproj",
+        "projectName": "Receive",
+        "projectPath": "C:\\Users\\Konrad\\Desktop\\Work\\Repozytorium Lokalne\\NETKolejka\\QueueIntegration\\Receive\\Receive.csproj",
         "packagesPath": "C:\\Users\\Konrad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Konrad\\Desktop\\Work\\Repozytorium Lokalne\\NETKolejka\\QueueIntegration\\QueueIntegration\\obj\\",
+        "outputPath": "C:\\Users\\Konrad\\Desktop\\Work\\Repozytorium Lokalne\\NETKolejka\\QueueIntegration\\Receive\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet",
@@ -42,6 +42,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.2.0-rc.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
