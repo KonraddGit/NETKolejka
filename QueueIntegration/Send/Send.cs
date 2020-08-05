@@ -1,38 +1,49 @@
 ﻿using System;
+using System.IO;
 using RabbitMQ.Client;
 using System.Text;
 
-class Send
+namespace Send
 {
-    public static void Main()
+    public class Send
     {
-        var factory = new ConnectionFactory() {HostName = "localhost"};
-
-        using (var connection = factory.CreateConnection())
+        GetAllFiles _getallFiles = new GetAllFiles();
+        private void SendMessage()
         {
-            using (var channel = connection.CreateModel())
+            var factory = new ConnectionFactory() { HostName = "localhost" };
+
+            using (var connection = factory.CreateConnection())
             {
-                channel.QueueDeclare(queue: "hello",
-                    durable: false,
-                    exclusive: false,
-                    autoDelete: false,
-                    arguments: null);
+                using (var channel = connection.CreateModel())
+                {
+                    channel.QueueDeclare(queue: "xmlFile",
+                        durable: false,
+                        exclusive: false,
+                        autoDelete: false,
+                        arguments: null);
 
-                string message = "hello world!";
+                    foreach (var item in _getallFiles.GetAllFilesToList())
+                    {
+                        var file = File.ReadAllText(item);
 
-                var body = Encoding.UTF8.GetBytes(message);
-                
-                channel.BasicPublish(exchange: "",
-                    routingKey:"hello",
-                    basicProperties:null,
-                    body: body);
+                        var body = Encoding.UTF8.GetBytes(file);
 
-                Console.WriteLine(" [x] Sent {0}",message);
+                        channel.BasicPublish(exchange: "",
+                            routingKey: "xmlFile",
+                            basicProperties: null,
+                            body: body);
+                    }
+                }
 
+                Console.WriteLine(" Press [enter] to exit");
+                Console.ReadKey();
             }
+        }
 
-            Console.WriteLine(" Press [enter to exit");
-            Console.ReadKey();
+        public static void Main()
+        {
+            var send = new Send();
+            send.SendMessage();
         }
     }
 }

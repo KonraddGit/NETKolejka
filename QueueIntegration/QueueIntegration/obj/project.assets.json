@@ -9,7 +9,7 @@
   },
   "packageFolders": {
     "C:\\Users\\Konrad\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -22,7 +22,7 @@
       "outputPath": "C:\\Users\\Konrad\\Desktop\\Work\\Repozytorium Lokalne\\NETKolejka\\QueueIntegration\\QueueIntegration\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet",
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [

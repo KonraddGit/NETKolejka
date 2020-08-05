@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
@@ -12,11 +13,26 @@ class Receive
         {
             using (var channel = connection.CreateModel())
             {
-                channel.QueueDeclare(queue: "hello",
+                channel.QueueDeclare(queue: "xmlFile",
                     durable: false,
                     exclusive: false,
                     autoDelete: false,
                     arguments: null);
+                
+                var consumer = new EventingBasicConsumer(channel);
+                consumer.Received += (model, args) =>
+                {
+                    var body = args.Body.ToArray();
+                    var message = Encoding.UTF8.GetString(body);
+                    Console.WriteLine(" [x] Received {0}", message);
+                };
+
+                channel.BasicConsume(queue: "xmlFile",
+                    autoAck: true,
+                    consumer: consumer);
+
+                Console.WriteLine(" Press [enter] to exit.");
+                Console.ReadKey();
             }
         }
     }
