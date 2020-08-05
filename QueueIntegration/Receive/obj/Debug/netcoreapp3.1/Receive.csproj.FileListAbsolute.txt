@@ -1,0 +1,16 @@
+C:\Users\Konrad\Desktop\Work\Repozytorium Lokalne\NETKolejka\QueueIntegration\Receive\bin\Debug\netcoreapp3.1\Receive.exe
+C:\Users\Konrad\Desktop\Work\Repozytorium Lokalne\NETKolejka\QueueIntegration\Receive\bin\Debug\netcoreapp3.1\Receive.deps.json
+C:\Users\Konrad\Desktop\Work\Repozytorium Lokalne\NETKolejka\QueueIntegration\Receive\bin\Debug\netcoreapp3.1\Receive.runtimeconfig.json
+C:\Users\Konrad\Desktop\Work\Repozytorium Lokalne\NETKolejka\QueueIntegration\Receive\bin\Debug\netcoreapp3.1\Receive.runtimeconfig.dev.json
+C:\Users\Konrad\Desktop\Work\Repozytorium Lokalne\NETKolejka\QueueIntegration\Receive\bin\Debug\netcoreapp3.1\Receive.dll
+C:\Users\Konrad\Desktop\Work\Repozytorium Lokalne\NETKolejka\QueueIntegration\Receive\bin\Debug\netcoreapp3.1\Receive.pdb
+C:\Users\Konrad\Desktop\Work\Repozytorium Lokalne\NETKolejka\QueueIntegration\Receive\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\Konrad\Desktop\Work\Repozytorium Lokalne\NETKolejka\QueueIntegration\Receive\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
+C:\Users\Konrad\Desktop\Work\Repozytorium Lokalne\NETKolejka\QueueIntegration\Receive\obj\Debug\netcoreapp3.1\Receive.csprojAssemblyReference.cache
+C:\Users\Konrad\Desktop\Work\Repozytorium Lokalne\NETKolejka\QueueIntegration\Receive\obj\Debug\netcoreapp3.1\Receive.AssemblyInfoInputs.cache
+C:\Users\Konrad\Desktop\Work\Repozytorium Lokalne\NETKolejka\QueueIntegration\Receive\obj\Debug\netcoreapp3.1\Receive.AssemblyInfo.cs
+C:\Users\Konrad\Desktop\Work\Repozytorium Lokalne\NETKolejka\QueueIntegration\Receive\obj\Debug\netcoreapp3.1\Receive.csproj.CoreCompileInputs.cache
+C:\Users\Konrad\Desktop\Work\Repozytorium Lokalne\NETKolejka\QueueIntegration\Receive\obj\Debug\netcoreapp3.1\Receive.csproj.CopyComplete
+C:\Users\Konrad\Desktop\Work\Repozytorium Lokalne\NETKolejka\QueueIntegration\Receive\obj\Debug\netcoreapp3.1\Receive.dll
+C:\Users\Konrad\Desktop\Work\Repozytorium Lokalne\NETKolejka\QueueIntegration\Receive\obj\Debug\netcoreapp3.1\Receive.pdb
+C:\Users\Konrad\Desktop\Work\Repozytorium Lokalne\NETKolejka\QueueIntegration\Receive\obj\Debug\netcoreapp3.1\Receive.genruntimeconfig.cache

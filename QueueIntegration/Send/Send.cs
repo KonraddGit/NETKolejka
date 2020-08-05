@@ -1,38 +1,68 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using RabbitMQ.Client;
 using System.Text;
 
-class Send
+namespace Send
 {
-    public static void Main()
+    class Send
     {
-        var factory = new ConnectionFactory() {HostName = "localhost"};
+        private string filePath = @"C:/Users/Konrad/Desktop/euvic/";
+            
+        private List<string> _filePathList = new List<string>();
 
-        using (var connection = factory.CreateConnection())
+
+        private List<string> GetAllFiles(List<string> list)
         {
-            using (var channel = connection.CreateModel())
+            var localFiles = Directory.GetFiles(filePath,
+                "*.xml",
+                SearchOption.TopDirectoryOnly).ToList();
+
+            foreach (var link in localFiles)
             {
-                channel.QueueDeclare(queue: "hello",
-                    durable: false,
-                    exclusive: false,
-                    autoDelete: false,
-                    arguments: null);
-
-                string message = "hello world!";
-
-                var body = Encoding.UTF8.GetBytes(message);
-                
-                channel.BasicPublish(exchange: "",
-                    routingKey:"hello",
-                    basicProperties:null,
-                    body: body);
-
-                Console.WriteLine(" [x] Sent {0}",message);
-
+                list.Add(link);
             }
 
-            Console.WriteLine(" Press [enter to exit");
-            Console.ReadKey();
+            return list;
+        }
+        
+        
+        
+        private void SendMessage()
+        {
+            var factory = new ConnectionFactory() { HostName = "localhost" };
+
+            using (var connection = factory.CreateConnection())
+            {
+                using (var channel = connection.CreateModel())
+                {
+                    channel.QueueDeclare(queue: "xmlFile",
+                        durable: false,
+                        exclusive: false,
+                        autoDelete: false,
+                        arguments: null);
+
+                    var file = File.ReadAllText(filePath);
+
+                    var body = Encoding.UTF8.GetBytes(file);
+
+                    channel.BasicPublish(exchange: "",
+                        routingKey: "xmlFile",
+                        basicProperties: null,
+                        body: body);
+                }
+
+                Console.WriteLine(" Press [enter] to exit");
+                Console.ReadKey();
+            }
+        }
+
+        public static void Main()
+        {
+            var send = new Send();
+            send.SendMessage();
         }
     }
 }
