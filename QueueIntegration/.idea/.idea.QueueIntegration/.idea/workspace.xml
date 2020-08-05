@@ -34,6 +34,7 @@
     <setting file="file://$PROJECT_DIR$/QueueIntegration/XmlModel/ProducedCars.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QueueIntegration/XmlModel/CarFeauters.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Send/Send.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Send/GetAllFiles.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QueueIntegration/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Receive/Receive.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -52,6 +53,7 @@
         <option value="$PROJECT_DIR$/Receive/Program.cs" />
         <option value="$PROJECT_DIR$/Send/SerialiseXml.cs" />
         <option value="$PROJECT_DIR$/Receive/Receive.cs" />
+        <option value="$PROJECT_DIR$/Send/GetAllFiles.cs" />
         <option value="$PROJECT_DIR$/Send/Send.cs" />
       </list>
     </option>
@@ -144,7 +146,7 @@
       <updated>1596551428549</updated>
       <workItem from="1596551479730" duration="5296000" />
       <workItem from="1596628035331" duration="2996000" />
-      <workItem from="1596633200276" duration="2041000" />
+      <workItem from="1596633200276" duration="2596000" />
     </task>
     <servers />
   </component>
