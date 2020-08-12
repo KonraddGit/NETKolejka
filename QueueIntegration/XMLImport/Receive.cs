@@ -3,42 +3,50 @@ using System.Text;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
-namespace Receive
+namespace XMLImport
 {
     public class Receive
     {
-        public Receive()
+        public bool ReceiveMessage()
         {
-            var factory = new ConnectionFactory();
-
-            using (var connection = factory.CreateConnection())
+            try
             {
-                using (var channel = connection.CreateModel())
+                var factory = new ConnectionFactory();
+
+                using (var connection = factory.CreateConnection())
                 {
-                    channel.QueueDeclare(queue: "xmlFile",
-                        durable: false,
-                        exclusive: false,
-                        autoDelete: false,
-                        arguments: null);
-
-                    var consumer = new EventingBasicConsumer(channel);
-
-                    consumer.Received += (model, args) =>
+                    using (var channel = connection.CreateModel())
                     {
-                        var body = args.Body.ToArray();
-                        var message = Encoding.UTF8.GetString(body);
-                        Console.WriteLine(" [x] Received {0}", message);
-                    };
+                        channel.QueueDeclare(queue: "xmlFile",
+                            durable: false,
+                            exclusive: false,
+                            autoDelete: false,
+                            arguments: null);
 
-                    channel.BasicConsume(queue: "xmlFile",
-                        autoAck: true,
-                        consumer: consumer);
+                        var consumer = new EventingBasicConsumer(channel);
 
-                    Console.WriteLine(" Press [enter] to exit.");
-                    Console.ReadKey();
+                        consumer.Received += (model, args) =>
+                        {
+                            var body = args.Body.ToArray();
+                            var message = Encoding.UTF8.GetString(body);
+                        };
+
+                        channel.BasicConsume(queue: "xmlFile",
+                            autoAck: true,
+                            consumer: consumer);
+                    }
                 }
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
             }
         }
 
+        public void SerializeXml()
+        {
+
+        }
     }
 }

@@ -29,15 +29,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/QueueIntegration/XmlModel/Manufacturer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/QueueIntegration/XmlModel/Factory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Receive/InsertToDb.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/QueueIntegration/XmlModel/ProducedCars.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/QueueIntegration/XmlModel/CarFeauters.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Send/Send.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Send/GetFileList.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/QueueIntegration/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Receive/Receive.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/source/repos/XMLImport/XMLImport/Form1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -114,19 +106,19 @@
       </method>
     </configuration>
     <configuration name="Send" type="DotNetProject" factoryName=".NET Project" temporary="true">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/Send/bin/Debug/netcoreapp3.1/Send.dll" />
+      <option name="EXE_PATH" value="$USER_HOME$/source/repos/XMLImport/XMLImport/bin/Debug/XMLImport.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Send/bin/Debug/netcoreapp3.1" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/source/repos/XMLImport/XMLImport/bin/Debug" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Send/Send.csproj" />
+      <option name="PROJECT_PATH" value="$USER_HOME$/source/repos/XMLImport/XMLImport/XMLImport.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.6.1" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -155,6 +147,7 @@
       <workItem from="1596645603568" duration="212000" />
       <workItem from="1596657817870" duration="4448000" />
       <workItem from="1597232273446" duration="1521000" />
+      <workItem from="1597256995499" duration="671000" />
     </task>
     <servers />
   </component>
@@ -181,22 +174,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="824" y="382" key="#Notifications/0.0.1920.1040/-1366.0.1366.728@0.0.1920.1040" timestamp="1596552077804" />
-    <state width="1877" height="218" key="GridCell.Tab.0.bottom" timestamp="1596635091619">
+    <state x="-999" y="0" width="646" height="728" key="#Send" timestamp="1597257687706">
+      <screen x="-1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="-999" y="0" width="646" height="728" key="#Send/0.0.1920.1040/-1366.0.1366.728@-1366.0.1366.728" timestamp="1597257687706" />
+    <state width="1323" height="92" key="GridCell.Tab.0.bottom" timestamp="1597257738113">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="218" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1366.0.1366.728@0.0.1920.1040" timestamp="1596635091619" />
-    <state width="1877" height="218" key="GridCell.Tab.0.center" timestamp="1596635091618">
+    <state width="1323" height="92" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1366.0.1366.728@-1366.0.1366.728" timestamp="1597257718992" />
+    <state width="1323" height="92" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1366.0.1366.728@0.0.1920.1040" timestamp="1597257738113" />
+    <state width="1323" height="92" key="GridCell.Tab.0.center" timestamp="1597257738113">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="218" key="GridCell.Tab.0.center/0.0.1920.1040/-1366.0.1366.728@0.0.1920.1040" timestamp="1596635091618" />
-    <state width="1877" height="218" key="GridCell.Tab.0.left" timestamp="1596635091618">
+    <state width="1323" height="92" key="GridCell.Tab.0.center/0.0.1920.1040/-1366.0.1366.728@-1366.0.1366.728" timestamp="1597257718991" />
+    <state width="1323" height="92" key="GridCell.Tab.0.center/0.0.1920.1040/-1366.0.1366.728@0.0.1920.1040" timestamp="1597257738113" />
+    <state width="1323" height="92" key="GridCell.Tab.0.left" timestamp="1597257738113">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="218" key="GridCell.Tab.0.left/0.0.1920.1040/-1366.0.1366.728@0.0.1920.1040" timestamp="1596635091618" />
-    <state width="1877" height="218" key="GridCell.Tab.0.right" timestamp="1596635091619">
+    <state width="1323" height="92" key="GridCell.Tab.0.left/0.0.1920.1040/-1366.0.1366.728@-1366.0.1366.728" timestamp="1597257718991" />
+    <state width="1323" height="92" key="GridCell.Tab.0.left/0.0.1920.1040/-1366.0.1366.728@0.0.1920.1040" timestamp="1597257738113" />
+    <state width="1323" height="92" key="GridCell.Tab.0.right" timestamp="1597257738113">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="218" key="GridCell.Tab.0.right/0.0.1920.1040/-1366.0.1366.728@0.0.1920.1040" timestamp="1596635091619" />
+    <state width="1323" height="92" key="GridCell.Tab.0.right/0.0.1920.1040/-1366.0.1366.728@-1366.0.1366.728" timestamp="1597257718992" />
+    <state width="1323" height="92" key="GridCell.Tab.0.right/0.0.1920.1040/-1366.0.1366.728@0.0.1920.1040" timestamp="1597257738113" />
     <state width="1877" height="375" key="GridCell.Tab.1.bottom" timestamp="1596633357918">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

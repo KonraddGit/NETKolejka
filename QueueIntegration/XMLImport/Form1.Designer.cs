@@ -32,6 +32,7 @@
             this.buttonBrowse = new System.Windows.Forms.Button();
             this.buttonImport = new System.Windows.Forms.Button();
             this.dataGridViewProduct = new System.Windows.Forms.DataGridView();
+            this.xmlString = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduct)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,16 +69,28 @@
             // dataGridViewProduct
             // 
             this.dataGridViewProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProduct.Location = new System.Drawing.Point(58, 174);
+            this.dataGridViewProduct.Location = new System.Drawing.Point(491, 179);
             this.dataGridViewProduct.Name = "dataGridViewProduct";
-            this.dataGridViewProduct.Size = new System.Drawing.Size(673, 237);
+            this.dataGridViewProduct.Size = new System.Drawing.Size(432, 237);
             this.dataGridViewProduct.TabIndex = 3;
+            // 
+            // xmlString
+            // 
+            this.xmlString.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.xmlString.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.xmlString.Location = new System.Drawing.Point(58, 179);
+            this.xmlString.Name = "xmlString";
+            this.xmlString.Size = new System.Drawing.Size(427, 237);
+            this.xmlString.TabIndex = 4;
+            this.xmlString.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.xmlString.UseMnemonic = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(977, 450);
+            this.Controls.Add(this.xmlString);
             this.Controls.Add(this.dataGridViewProduct);
             this.Controls.Add(this.buttonImport);
             this.Controls.Add(this.buttonBrowse);
@@ -98,6 +111,7 @@
         private System.Windows.Forms.Button buttonBrowse;
         private System.Windows.Forms.Button buttonImport;
         private System.Windows.Forms.DataGridView dataGridViewProduct;
+        private System.Windows.Forms.Label xmlString;
     }
 }
 
