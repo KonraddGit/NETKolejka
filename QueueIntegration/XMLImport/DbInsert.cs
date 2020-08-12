@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Linq;
 
 namespace XMLImport
 {
     public class DbInsert
     {
-        
+        XmlDbEntities2 xmlDbEntities = new XmlDbEntities2();
         public List<ProductionReport> DbInserts(string fileName)
         {
             XDocument xDocument = XDocument.Load(fileName);
@@ -24,7 +23,7 @@ namespace XMLImport
                     Model = product.Element("Model").Value,
                 }).ToList();
 
-            using (XmlDbEntities2 xmlDbEntities = new XmlDbEntities2())
+            using (xmlDbEntities)
             {
                 foreach (var item in productList)
                 {
@@ -48,6 +47,11 @@ namespace XMLImport
 
                 return xmlDbEntities.ProductionReports.ToList();
             }
+        }
+
+        public List<ProductionReport> ListReport()
+        {
+            return xmlDbEntities.ProductionReports.ToList();
         }
     }
 }

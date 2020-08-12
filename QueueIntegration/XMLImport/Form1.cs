@@ -5,7 +5,7 @@ namespace XMLImport
 {
     public partial class Form1 : Form
     {
-        private readonly Receive _receive = new Receive();
+        Receive _receive = new Receive();
         private readonly Send _sendMessage = new Send();
         private readonly DbInsert _dbInsert = new DbInsert();
 
@@ -32,17 +32,6 @@ namespace XMLImport
         private void buttonImport_Click(object sender, EventArgs e)
         {
             ReceiveMessage();
-
-            try
-            {
-                dataGridViewProduct.DataSource = _dbInsert.DbInserts(fileName);
-
-                MessageBox.Show("Successful insert");
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Can not insert Xml to database");
-            }
         }
 
         private void BrowseFilesAndSendMessage()
@@ -63,9 +52,11 @@ namespace XMLImport
 
         private void ReceiveMessage()
         {
-            if (_receive.ReceiveMessage() == true)
+            if (_receive.ReceiveMessages() == true)
             {
-                MessageBox.Show("Successfuly received message");
+                MessageBox.Show("Successfuly received message and inserted to db");
+
+                dataGridViewProduct.DataSource = _dbInsert.ListReport();
             }
             else MessageBox.Show("Something went wrong");
         }
