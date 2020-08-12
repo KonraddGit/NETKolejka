@@ -7,7 +7,6 @@ namespace Send
 {
     public class Send
     {
-        private readonly GetFileList _fileList = new GetFileList();
         private void SendMessage()
         {
             var factory = new ConnectionFactory() { HostName = "localhost" };
@@ -21,8 +20,7 @@ namespace Send
                     autoDelete: false,
                     arguments: null);
 
-                foreach (var item in _fileList.GetAllFilesToList())
-                {
+                
                     var file = File.ReadAllText(item);
 
                     var body = Encoding.UTF8.GetBytes(file);
@@ -31,7 +29,7 @@ namespace Send
                         routingKey: "xmlFile",
                         basicProperties: null,
                         body: body);
-                }
+                
             }
 
             Console.WriteLine(" Press [enter] to exit");

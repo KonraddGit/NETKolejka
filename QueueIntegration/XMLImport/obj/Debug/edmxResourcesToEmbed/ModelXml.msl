@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="XmlDbModelStoreContainer" CdmEntityContainer="XmlDbEntities">
+    <EntitySetMapping Name="ProductionReports">
+      <EntityTypeMapping TypeName="XmlDbModel.ProductionReport">
+        <MappingFragment StoreEntitySet="ProductionReport">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FactoryName" ColumnName="FactoryName" />
+          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="ProductionYear" ColumnName="ProductionYear" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="FeatureCode" ColumnName="FeatureCode" />
+          <ScalarProperty Name="Feature" ColumnName="Feature" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

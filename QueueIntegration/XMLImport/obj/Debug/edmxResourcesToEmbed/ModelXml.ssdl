@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="XmlDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'XmlDb.dbo.ProductionReport' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ProductionReport">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="FactoryName" Type="varchar" MaxLength="50" />
+    <Property Name="Manufacturer" Type="varchar" MaxLength="50" />
+    <Property Name="Date" Type="date" />
+    <Property Name="Vin" Type="varchar" MaxLength="50" />
+    <Property Name="ProductionYear" Type="varchar" MaxLength="50" />
+    <Property Name="Model" Type="varchar" MaxLength="50" />
+    <Property Name="FeatureCode" Type="varchar" MaxLength="50" />
+    <Property Name="Feature" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="XmlDbModelStoreContainer">
+    <EntitySet Name="ProductionReport" EntityType="Self.ProductionReport" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ProductionReport].[Id] AS [Id], 
+    [ProductionReport].[FactoryName] AS [FactoryName], 
+    [ProductionReport].[Manufacturer] AS [Manufacturer], 
+    [ProductionReport].[Date] AS [Date], 
+    [ProductionReport].[Vin] AS [Vin], 
+    [ProductionReport].[ProductionYear] AS [ProductionYear], 
+    [ProductionReport].[Model] AS [Model], 
+    [ProductionReport].[FeatureCode] AS [FeatureCode], 
+    [ProductionReport].[Feature] AS [Feature]
+    FROM [dbo].[ProductionReport] AS [ProductionReport]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
