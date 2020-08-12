@@ -31,10 +31,11 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/QueueIntegration/XmlModel/Manufacturer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QueueIntegration/XmlModel/Factory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Receive/InsertToDb.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QueueIntegration/XmlModel/ProducedCars.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QueueIntegration/XmlModel/CarFeauters.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Send/Send.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Send/GetAllFiles.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Send/GetFileList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QueueIntegration/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Receive/Receive.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -52,9 +53,11 @@
         <option value="$PROJECT_DIR$/Send/Program.cs" />
         <option value="$PROJECT_DIR$/Receive/Program.cs" />
         <option value="$PROJECT_DIR$/Send/SerialiseXml.cs" />
-        <option value="$PROJECT_DIR$/Receive/Receive.cs" />
         <option value="$PROJECT_DIR$/Send/GetAllFiles.cs" />
+        <option value="$PROJECT_DIR$/Send/GetListOfFiles.cs" />
         <option value="$PROJECT_DIR$/Send/Send.cs" />
+        <option value="$PROJECT_DIR$/Receive/Receive.cs" />
+        <option value="$PROJECT_DIR$/Receive/InsertToDb.cs" />
       </list>
     </option>
   </component>
@@ -70,6 +73,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager" selected=".NET Project.Send">
@@ -147,6 +151,10 @@
       <workItem from="1596551479730" duration="5296000" />
       <workItem from="1596628035331" duration="2996000" />
       <workItem from="1596633200276" duration="2596000" />
+      <workItem from="1596637356920" duration="1273000" />
+      <workItem from="1596645603568" duration="212000" />
+      <workItem from="1596657817870" duration="4448000" />
+      <workItem from="1597232273446" duration="1521000" />
     </task>
     <servers />
   </component>

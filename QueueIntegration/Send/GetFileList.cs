@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Send
 {
-    public class GetAllFiles
+    public class GetFileList
     {
         private string filePath = @"C:/Users/Konrad/Desktop/euvic/";
             

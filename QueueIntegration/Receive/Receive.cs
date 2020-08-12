@@ -1,39 +1,49 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
-class Receive
+namespace Receive
 {
-    public static void Main()
+    class Receive
     {
-        var factory = new ConnectionFactory();
-
-        using (var connection = factory.CreateConnection())
+        public static void Main()
         {
-            using (var channel = connection.CreateModel())
+            var factory = new ConnectionFactory();
+
+            using (var connection = factory.CreateConnection())
             {
-                channel.QueueDeclare(queue: "xmlFile",
-                    durable: false,
-                    exclusive: false,
-                    autoDelete: false,
-                    arguments: null);
-                
-                var consumer = new EventingBasicConsumer(channel);
-                consumer.Received += (model, args) =>
+                using (var channel = connection.CreateModel())
                 {
-                    var body = args.Body.ToArray();
-                    var message = Encoding.UTF8.GetString(body);
-                    Console.WriteLine(" [x] Received {0}", message);
-                };
+                    channel.QueueDeclare(queue: "xmlFile",
+                        durable: false,
+                        exclusive: false,
+                        autoDelete: false,
+                        arguments: null);
+                
+                    var consumer = new EventingBasicConsumer(channel);
+                    
+                    consumer.Received += (model, args) =>
+                    {
+                        var body = args.Body.ToArray();
+                        var message = Encoding.UTF8.GetString(body);
+                        Console.WriteLine(" [x] Received {0}", message);
+                    };
 
-                channel.BasicConsume(queue: "xmlFile",
-                    autoAck: true,
-                    consumer: consumer);
+                    channel.BasicConsume(queue: "xmlFile",
+                        autoAck: true,
+                        consumer: consumer);
 
-                Console.WriteLine(" Press [enter] to exit.");
-                Console.ReadKey();
+                    Console.WriteLine(" Press [enter] to exit.");
+                    Console.ReadKey();
+                }
             }
+        }
+
+        public void ImportToDb()
+        {
+            
         }
     }
 }

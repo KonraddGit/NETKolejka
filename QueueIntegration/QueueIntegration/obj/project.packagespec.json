@@ -19,7 +19,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\Users\\Konrad\\Desktop\\Work\\Repozytorium Lokalne\\NETKolejka\\QueueIntegration\\Receive\\Receive.csproj": {
+            "projectPath": "C:\\Users\\Konrad\\Desktop\\Work\\Repozytorium Lokalne\\NETKolejka\\QueueIntegration\\Receive\\Receive.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
