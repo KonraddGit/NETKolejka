@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProductionReport>
+  <Car>
+    <Id>1</Id>
+    <Vin>O002CBC996</Vin>
+    <ProductionYear>2020</ProductionYear>
+    <Model>X5</Model>
+  </Car>
+  <Car>
+    <Id>2</Id>
+    <Vin>O004TBC025</Vin>
+    <ProductionYear>2019</ProductionYear>
+    <Model>X1</Model>
+  </Car>
+  <Car>
+    <Id>3</Id>
+    <Vin>1204TBC025</Vin>
+    <ProductionYear>2010</ProductionYear>
+    <Model>Sierra</Model>
+  </Car>
+  <Car>
+    <Id>4</Id>
+    <Vin>1204BVC543</Vin>
+    <ProductionYear>2018</ProductionYear>
+    <Model>Seicento</Model>
+  </Car>
+</ProductionReport>

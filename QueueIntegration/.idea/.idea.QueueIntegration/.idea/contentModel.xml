@@ -5,50 +5,36 @@
     <e p="C:\Users\Konrad\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_QueueIntegration.1191640868.00" t="ExcludeRecursive" />
     <e p="C:\Users\Konrad\Desktop\Work\Repozytorium Lokalne\NETKolejka\QueueIntegration" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
-      <e p="QueueIntegration" t="IncludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="QueueIntegration.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Program.cs" t="Include" />
-        <e p="QueueIntegration.csproj" t="IncludeRecursive" />
-        <e p="XmlModel" t="Include">
-          <e p="CarFeauters.cs" t="Include" />
-          <e p="Factory.cs" t="Include" />
-          <e p="Manufacturer.cs" t="Include" />
-          <e p="ProducedCars.cs" t="Include" />
-        </e>
-      </e>
       <e p="QueueIntegration.sln" t="IncludeFlat" />
-      <e p="Receive" t="IncludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="Receive.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Receive.cs" t="Include" />
-        <e p="Receive.csproj" t="IncludeRecursive" />
+    </e>
+    <e p="C:\Users\Konrad\source\repos\XMLImport\XMLImport" t="IncludeRecursive">
+      <e p="App.config" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Form1.cs" t="Include" />
+      <e p="Form1.Designer.cs" t="Include" />
+      <e p="Form1.resx" t="Include" />
+      <e p="Model1.Context.cs" t="Include" />
+      <e p="Model1.Context.tt" t="Include" />
+      <e p="Model1.cs" t="Include" />
+      <e p="Model1.Designer.cs" t="Include" />
+      <e p="Model1.edmx" t="Include" />
+      <e p="Model1.edmx.diagram" t="Include" />
+      <e p="Model1.tt" t="Include" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages.config" t="Include" />
+      <e p="ProductionReport.cs" t="Include" />
+      <e p="ProductionReportMetaData.cs" t="Include" />
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+        <e p="Resources.Designer.cs" t="Include" />
+        <e p="Resources.resx" t="Include" />
+        <e p="Settings.Designer.cs" t="Include" />
+        <e p="Settings.settings" t="Include" />
       </e>
-      <e p="Send" t="IncludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="GetAllFiles.cs" t="Include" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="Send.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="send.cs" t="Include" />
-        <e p="Send.csproj" t="IncludeRecursive" />
-      </e>
+      <e p="Receive.cs" t="Include" />
+      <e p="send.cs" t="Include" />
+      <e p="XMLImport.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>
